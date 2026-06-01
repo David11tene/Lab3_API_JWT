@@ -25,4 +25,13 @@ router.post('/register', async (req, res) => {
     res.status(201).json({ message: 'Usuario creado' });
 });
 
+//Login de usuario
+router.post('/login', async (req, res) => {
+    //Obtener el correo y la contraseña del cuerpo de la solicitud
+    const { correo, contrasenia } = req.body || {};
+    //Buscar al usuario en la bd por su correo
+    const usuario = await Usuario.findOne({ correo });
+
+});
+
 module.exports = router;
