@@ -1,0 +1,34 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "Backend de reservas con JWT, enciptacion ODM Mongoose",
+  "keywords": [
+    "node.js",
+    "JWT",
+    "bcrypt"
+  ],
+  "homepage": "https://github.com/David11tene/Lab3_API_JWT#readme",
+  "bugs": {
+    "url": "https://github.com/David11tene/Lab3_API_JWT/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/David11tene/Lab3_API_JWT.git"
+  },
+  "license": "ISC",
+  "author": "David Teneguznay",
+  "type": "commonjs",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "bcryptjs": "^3.0.3",
+    "cors": "^2.8.6",
+    "dotenv": "^17.4.2",
+    "express": "^5.2.1",
+    "jsonwebtoken": "^9.0.3",
+    "mongoose": "^9.6.3"
+  }
+}
